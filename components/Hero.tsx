@@ -36,8 +36,8 @@ export const Hero = () => {
         <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
           Open For Work
         </span>
-        <h1 className="text-white/40 text-5xl font-black">Hi, I am</h1>
-        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text text-7xl font-black leading-tight text-transparent">
+        <h1 className="text-white/40 text-5xl md:text-7xl font-black">Hi, I am</h1>
+        <h1 className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight text-transparent text-5xl md:text-7xl">
           Dika Ramadani
         </h1>
         <Image src={profilepic} alt="profile picture" width={250} height={250} />
