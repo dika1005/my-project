@@ -1,7 +1,7 @@
 // import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { LogoAnimation } from "@/components/LogoAnimation";
-// import { Portofolio } from "@/components/Portofolio";
+import { Portofolio } from "@/components/Portofolio";
 import { Stack } from "@/components/Stack";
 // import { Contact } from "@/components/Contact";
 // import { Footer } from "@/components/Footer";
@@ -14,6 +14,7 @@ export default function Home() {
     <Hero />
     <Stack />
     <LogoAnimation />
+    <Portofolio />
     </>
   );
 }
