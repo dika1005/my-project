@@ -1,7 +1,8 @@
 // import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { LogoAnimation } from "@/components/LogoAnimation";
 // import { Portofolio } from "@/components/Portofolio";
-// import { Stack } from "@/components/Stack";
+import { Stack } from "@/components/Stack";
 // import { Contact } from "@/components/Contact";
 // import { Footer } from "@/components/Footer";
 // import { KeyMetrix } from "@/components/KeyMetrix";
@@ -11,6 +12,8 @@ export default function Home() {
   return ( 
     <>
     <Hero />
+    <Stack />
+    <LogoAnimation />
     </>
   );
 }
