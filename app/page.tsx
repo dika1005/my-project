@@ -6,7 +6,7 @@ import { Portofolio } from "@/components/Portofolio";
 import { Stack } from "@/components/Stack";
 import { Service } from "@/components/Service";
 import { Contact } from "@/components/Contact";
-// import { Footer } from "@/components/Footer";
+import { Footer } from "@/components/Footer";
 // import Image from "next/image";
 
 export default function Home() {
@@ -20,6 +20,7 @@ export default function Home() {
     <KeyMetrix />
     <Service />
     <Contact />
+    <Footer />
     </>
   );
 }
