@@ -5,7 +5,12 @@ import Image from "next/image";
 import project1 from "@/public/assets/proj5.png";
 import project2 from "@/public/assets/proj6.png";
 import project3 from "@/public/assets/proj7.png";
-import { useMotionTemplate, useMotionValue, motion, animate } from "framer-motion";
+import {
+  useMotionTemplate,
+  useMotionValue,
+  motion,
+  animate,
+} from "framer-motion";
 
 const projects = [
   {
@@ -39,26 +44,27 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 export const Portofolio = () => {
   const [selectedProject, setSelectedProject] = useState(projects[0]);
 
-    const color = useMotionValue(COLORS_TOP[0]);
+  const color = useMotionValue(COLORS_TOP[0]);
 
-    useEffect(() => {
-        animate(color, COLORS_TOP, {
-          ease: "easeInOut",
-          duration: 10,
-          repeat: Infinity,
-          repeatType: "mirror",
-        })
-      }, []);
+  useEffect(() => {
+    animate(color, COLORS_TOP, {
+      ease: "easeInOut",
+      duration: 10,
+      repeat: Infinity,
+      repeatType: "mirror",
+    });
+  }, []);
 
-      const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
+  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
 
   return (
-    <motion.section 
-        style={{
-            backgroundImage
-        }}
-        id="portofolio" 
-        className="py-32 text-white">
+    <motion.section
+      style={{
+        backgroundImage,
+      }}
+      id="portofolio"
+      className="py-32 text-white"
+    >
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-6xl font-bold mb-10">
