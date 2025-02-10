@@ -1,4 +1,4 @@
-// import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { KeyMetrix } from "@/components/KeyMetrix";
 import { LogoAnimation } from "@/components/LogoAnimation";
@@ -12,6 +12,7 @@ import { Contact } from "@/components/Contact";
 export default function Home() {
   return ( 
     <>
+    <Navbar />
     <Hero />
     <Stack />
     <LogoAnimation />

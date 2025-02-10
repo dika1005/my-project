@@ -62,7 +62,7 @@ export const Portofolio = () => {
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12">
         <div>
           <h2 className="text-6xl font-bold mb-10">
-            Selected <span className="text-gray-400">Project</span>
+            Selected <span className="text-purple-400">Project</span>
           </h2>
           {projects.map((project) => (
             <div
@@ -72,14 +72,14 @@ export const Portofolio = () => {
             >
               <p className="text-gray-400 text-lg mb-2">{project.year}</p>
               <h3
-                className={`text-3xl font-semibold group-hover:text-gray-400 transition-colors  ${
-                  selectedProject.id === project.id ? "text-gray-200" : ""
+                className={`text-3xl font-semibold group-hover:text-purple-400 transition-colors  ${
+                  selectedProject.id === project.id ? "text-purple-200" : ""
                 }duration-300`}
               >
                 {project.title}
               </h3>
               {selectedProject.id === project.id && (
-                <div className="border-b-2 border-gray-200 scroll-my-4"></div>
+                <div className="border-b-2 border-purple-200 my-4"></div>
               )}
               {selectedProject.id === project.id && (
                 <p className="text-gray-400 transition-all duration-500 ease-in-out">
