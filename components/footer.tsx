@@ -1,3 +1,4 @@
+"use client";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -7,11 +8,36 @@ import {
 import { FaTelegramPlane } from "react-icons/fa";
 
 const socialLinks = [
-  { href: "https://github.com", Icon: AiFillGithub, label: "GitHub" },
-  { href: "https://x.com", Icon: AiOutlineTwitter, label: "X (Twitter)" },
-  { href: "https://facebook.com", Icon: AiFillFacebook, label: "Facebook" },
-  { href: "https://instagram.com", Icon: AiFillInstagram, label: "Instagram" },
-  { href: "https://telegram.org", Icon: FaTelegramPlane, label: "Telegram" },
+  {
+    href: "https://github.com/dika1005",
+    Icon: AiFillGithub,
+    label: "GitHub",
+    target: "_blank",
+  },
+  {
+    href: "https://x.com/MassRama21",
+    Icon: AiOutlineTwitter,
+    label: "X (Twitter)",
+    target: "_blank",
+  },
+  {
+    href: "https://www.facebook.com/profile.php?id=100087939921684&locale=id_ID",
+    Icon: AiFillFacebook,
+    label: "Facebook",
+    target: "_blank",
+  },
+  {
+    href: "https://www.instagram.com/mas_dikk21/",
+    Icon: AiFillInstagram,
+    label: "Instagram",
+    target: "_blank",
+  },
+  {
+    href: "https://telegram.org",
+    Icon: FaTelegramPlane,
+    label: "Telegram",
+    target: "_blank",
+  },
 ];
 
 export const Footer = () => {
@@ -22,15 +48,15 @@ export const Footer = () => {
 
         <ul className="flex gap-5 flex-wrap">
           {socialLinks.map(({ href, Icon, label }) => (
-            <a
+            <button
               key={label}
-              href={href}
+              onClick={() => window.open(href, "_blank", "noopener,noreferrer")}
               aria-label={label}
               className="text-gray-200 flex items-center justify-center w-10 h-10 rounded-full
                          hover:text-gray-400 transition-colors"
             >
               <Icon size={30} />
-            </a>
+            </button>
           ))}
         </ul>
       </div>
