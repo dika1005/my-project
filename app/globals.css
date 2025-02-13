@@ -7,7 +7,6 @@ body {
   background: #0a0a0a;
 }
 
-
 .bg-circle-container {
   position: absolute;
   top: 50%;
@@ -36,13 +35,15 @@ body {
   width: 1100px;
   height: 1100px;
   border-radius: 50%;
-  background: radial-gradient(circle, 
-              #161616e6 0%,
-              rgba(19, 18, 18, 0.9) 1%,
-              rgba(48, 39, 48, 0.3) 10%,
-              rgba(46, 40, 49, 0.2) 20%, 
-              rgba(82, 78, 85, 0.1) 60%, 
-              rgb(65, 63, 63) 100%);
+  background: radial-gradient(
+    circle,
+    #161616e6 0%,
+    rgba(19, 18, 18, 0.9) 1%,
+    rgba(48, 39, 48, 0.3) 10%,
+    rgba(46, 40, 49, 0.2) 20%,
+    rgba(82, 78, 85, 0.1) 60%,
+    rgb(65, 63, 63) 100%
+  );
   z-index: 0;
 }
 
@@ -50,14 +51,17 @@ body {
   background-color: #766c77;
 }
 
-.glass{
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  border:1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-
 }
 
 html {
