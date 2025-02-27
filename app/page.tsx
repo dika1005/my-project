@@ -5,7 +5,7 @@ import { LogoAnimation } from "@/components/LogoAnimation";
 import { Portofolio } from "@/components/Portofolio";
 import { Stack } from "@/components/Stack";
 import { Service } from "@/components/Service";
-import { Education } from "@/components/Education";
+// import { Education } from "@/components/Education";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 // import Image from "next/image";
@@ -20,7 +20,7 @@ export default function Home() {
       <Portofolio />
       <KeyMetrix />
       <Service />
-      <Education />
+      {/* <Education /> */}
       <Contact />
       <Footer />
     </>
